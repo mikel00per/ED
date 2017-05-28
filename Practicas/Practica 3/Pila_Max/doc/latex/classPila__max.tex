@@ -1,0 +1,208 @@
+\section{Referencia de la plantilla de la Clase Pila\+\_\+max$<$ T $>$}
+\label{classPila__max}\index{Pila\+\_\+max$<$ T $>$@{Pila\+\_\+max$<$ T $>$}}
+
+
+T.\+D.\+A. List.  
+
+
+
+
+{\ttfamily \#include $<$pila\+\_\+max\+\_\+list.\+h$>$}
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Celda}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\label{classPila__max_a2a7e17c656ae00679fd66b2102508f4c} 
+{\bf Pila\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em Constructor sin parámetros. \end{DoxyCompactList}\item 
+{\bf Pila\+\_\+max} (const {\bf Pila\+\_\+max}$<$ T $>$ \&otra)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\label{classPila__max_a860c4516a5d558e4d493b4f051b23980} 
+{\bf $\sim$\+Pila\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase Invoca a destruir. \end{DoxyCompactList}\item 
+{\bf Pila\+\_\+max}$<$ T $>$ \& {\bf operator=} (const {\bf Pila\+\_\+max}$<$ T $>$ \&otra)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador asignación. \end{DoxyCompactList}\item 
+\label{classPila__max_a280f558007b1b064a43a9983a212f682} 
+bool {\bf vacia} ()
+\begin{DoxyCompactList}\small\item\em Consulta si la pila está vacía. \end{DoxyCompactList}\item 
+void {\bf poner} (int n)
+\begin{DoxyCompactList}\small\item\em Introduce un nuevo numero en la pila. \end{DoxyCompactList}\item 
+void {\bf insertar} (T \&e)
+\begin{DoxyCompactList}\small\item\em Introduce un nuevo elemento a la pila. \end{DoxyCompactList}\item 
+\label{classPila__max_adb91c11d4d02c43d7d58d01be821a589} 
+void {\bf quitar} ()
+\begin{DoxyCompactList}\small\item\em Elimina el último elemento de la pila. \end{DoxyCompactList}\item 
+\label{classPila__max_ae8f079d33416918cb785cddc64bab78c} 
+T \& {\bf tope} ()
+\begin{DoxyCompactList}\small\item\em Consulta el máximo elemento de la pila. \end{DoxyCompactList}\item 
+\label{classPila__max_a280f558007b1b064a43a9983a212f682} 
+bool {\bf vacia} ()
+\begin{DoxyCompactList}\small\item\em Consulta si la pila está vacía. \end{DoxyCompactList}\item 
+void {\bf poner} (int n)
+\begin{DoxyCompactList}\small\item\em Introduce un nuevo elemento en la pila. \end{DoxyCompactList}\item 
+\label{classPila__max_adb91c11d4d02c43d7d58d01be821a589} 
+void {\bf quitar} ()
+\begin{DoxyCompactList}\small\item\em Elimina el último elemento de la pila. \end{DoxyCompactList}\item 
+\label{classPila__max_a499853a0930095ec8212d13ccfe25d4a} 
+{\bf elemento} {\bf tope} ()
+\begin{DoxyCompactList}\small\item\em Consulta el máximo elemento de la pila. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\label{classPila__max_ac5f4c44440a67449802f882940bb5558} 
+{\bf Celda} $\ast$ {\bf cabecera}
+\begin{DoxyCompactList}\small\item\em puntero, vector dinámico \end{DoxyCompactList}\item 
+\label{classPila__max_a769867173f1706c312fc0311220f5bf0} 
+int {\bfseries nelementos}
+\item 
+{\bf Vector\+\_\+\+Dinamico}$<$ {\bf elemento} $>$ {\bf v}
+\begin{DoxyCompactList}\small\item\em Rep de pila\+\_\+max. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Pila\+\_\+max$<$ T $>$}
+
+T.\+D.\+A. List. 
+
+T.\+D.\+A. Pila.
+
+La implementación interna se basa en un vector dinámico de donde se insertan y sacan datos a modo de cola L\+I\+FO, Last Input First Outout, el primero que entra es el primero que sale. Es la misma idea que el funcionamiento de la pila con las llamadas de las funciones.
+
+\begin{DoxyAuthor}{Autor}
+Antonio Miguel Morillo Chica 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+13-\/11-\/2016 
+\end{DoxyDate}
+
+
+Definición en la línea 27 del archivo pila\+\_\+max\+\_\+list.\+h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\label{classPila__max_ac5660591f59bd281a4d0df416e1f76d0} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!Pila\+\_\+max@{Pila\+\_\+max}}
+\index{Pila\+\_\+max@{Pila\+\_\+max}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{Pila\+\_\+max()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+{\bf Pila\+\_\+max}$<$ T $>$\+::{\bf Pila\+\_\+max} (\begin{DoxyParamCaption}\item[{const {\bf Pila\+\_\+max}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otra} & referencia a la lista que se quiere copiar. La lista se copiará sobre el objeto implicito. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\label{classPila__max_aaf2403b8383f4b7d9c060c676e59bd95} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!insertar@{insertar}}
+\index{insertar@{insertar}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{insertar()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void {\bf Pila\+\_\+max}$<$ T $>$\+::insertar (\begin{DoxyParamCaption}\item[{T \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Introduce un nuevo elemento a la pila. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em e} & elemento a introducir \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Pila\+\_\+max$<$ T $>$\+::vacia().
+
+\label{classPila__max_a077cce5bded391524aebd8c468166e5c} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!operator=@{operator=}}
+\index{operator=@{operator=}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+{\bf Pila\+\_\+max}$<$T$>$\& {\bf Pila\+\_\+max}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const {\bf Pila\+\_\+max}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otra} & refiere a la nueva pila que se quiere asignar al objeto implicito \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Pila\+\_\+max$<$ T $>$\+::\+Pila\+\_\+max().
+
+\label{classPila__max_ad47a205efb97c2e1c248d90026cc3b15} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!poner@{poner}}
+\index{poner@{poner}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{poner()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void {\bf Pila\+\_\+max}$<$ T $>$\+::poner (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Introduce un nuevo elemento en la pila. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & numero a introducir a la pila \\
+\hline
+\end{DoxyParams}
+\label{classPila__max_ad47a205efb97c2e1c248d90026cc3b15} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!poner@{poner}}
+\index{poner@{poner}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{poner()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void {\bf Pila\+\_\+max}$<$ T $>$\+::poner (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Introduce un nuevo numero en la pila. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & numero a introducir a la pila \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Pila\+\_\+max$<$ T $>$\+::vacia().
+
+
+
+\subsection{Documentación de los datos miembro}
+\label{classPila__max_a3bd870960816b4138c7e63335455abf8} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!v@{v}}
+\index{v@{v}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{v}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+{\bf Vector\+\_\+\+Dinamico}$<${\bf elemento}$>$ {\bf Pila\+\_\+max}$<$ T $>$\+::v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rep de pila\+\_\+max. 
+
+Guardamos los datos en un vector\+\_\+dinamico de tipo elemento En este caso no hay invariante de la representación ya que todo descansa en la clase vector\+\_\+dinamicopuntero, vector dinámico 
+
+Definición en la línea 35 del archivo pila\+\_\+max\+\_\+\+V\+D.\+h.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/{\bf pila\+\_\+max\+\_\+list.\+h}\item 
+include/{\bf pila\+\_\+max\+\_\+\+V\+D.\+h}\end{DoxyCompactItemize}
